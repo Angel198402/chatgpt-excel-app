@@ -26,7 +26,7 @@ const App = () => {
   const [generatingFlag, setGeneratingFlag] = useState(false);
   const [saveFlag, setSaveFlag] = useState(false);
   const [modelName, setModelName] = useState("text-davinci-003");
-  const [apikey, setApikey] = useState("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")
+  const [apikey, setApikey] = useState("")
   const [errorMessage, setErrorMessage] = useState("");
   const handleChange = (e) => {
     const files = e.target.files;
