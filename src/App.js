@@ -5,7 +5,7 @@
 
 */
 
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import XLSX from "xlsx";
 import DisplayTable from "./components/DisplayTable.js";
 // const openai_api_key = "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";
@@ -36,7 +36,6 @@ const App = () => {
     setSaveFlag(false);
     setDataArray([]);
   }
-  const delay = (ms) => new Promise(async (res) => await setTimeout(res, ms)); // delay time
 
   const sendRequest = async (promptStr, title, desc) => {
     let prompt = promptStr + ".\n Title is " + title + ".\n And product description is " + desc;

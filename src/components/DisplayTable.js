@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "../App.css";
 
@@ -17,8 +17,6 @@ const DisplayTable = (dataObj) => {
       </tr>
     );
   };
-
-  const delay = (ms) => new Promise(async (res) => await setTimeout(res, ms)); // delay time
 
   return (
     <div>
